@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Verse - Переклади</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Головна секція -->
+    <section class="bg-white py-10 text-center">
+        <h1 class="text-4xl font-bold mb-4">Переклади ШВИДКО, ЯКІСНО, ЕФЕКТИВНО</h1>
+        <p class="text-lg">Переклад – це не просто заміна слів, а передача змісту, стилю та емоцій.</p>
+    </section>
+
+    <!-- Про нас -->
+    <section id="about" class="py-10 px-5 bg-gray-200">
+        <h2 class="text-3xl font-semibold text-center mb-4">Про нас</h2>
+        <p class="text-center max-w-2xl mx-auto">Бюро перекладів "Echo Verse" – це команда професіоналів, які пропонують послуги з письмового, усного перекладу та локалізації сайтів.</p>
+    </section>
+
+    <!-- Каталог пропозицій -->
+    <section id="services" class="py-10 px-5">
+        <h2 class="text-3xl font-semibold text-center mb-4">Каталог пропозицій</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-5 bg-white rounded-2xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Письмовий переклад</h3>
+                <p>Переклад документів, статей, технічних текстів та ін.</p>
+            </div>
+            <div class="p-5 bg-white rounded-2xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Усний переклад</h3>
+                <p>Супровід на зустрічах, конференціях, переговорах.</p>
+            </div>
+            <div class="p-5 bg-white rounded-2xl shadow-md">
+                <h3 class="text-xl font-bold mb-2">Локалізація сайтів</h3>
+                <p>Адаптація вебсайтів під різні мовні аудиторії.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наші перекладачі -->
+    <section id="translators" class="py-10 px-5 bg-gray-200">
+        <h2 class="text-3xl font-semibold text-center mb-4">Наші перекладачі</h2>
+        <div class="relative max-w-3xl mx-auto">
+            <div id="translator-slider" class="flex overflow-hidden">
+                <!-- Перекладач 1 -->
+                <div class="min-w-full p-5 text-center">
+                    <img src="translator1.jpg" alt="Олена Іваненко" class="mx-auto rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-bold">Олена Іваненко</h3>
+                    <p>Англійська, французька мови. 5 років досвіду.</p>
+                </div>
+                <!-- Перекладач 2 -->
+                <div class="min-w-full p-5 text-center">
+                    <img src="translator2.jpg" alt="Айбек Уо" class="mx-auto rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-bold">Айбек Уо</h3>
+                    <p>Китайська, японська мови. 3 роки досвіду.</p>
+                </div>
+                <!-- Перекладач 3 -->
+                <div class="min-w-full p-5 text-center">
+                    <img src="translator3.jpg" alt="Максим Арутюнов" class="mx-auto rounded-full w-32 h-32 mb-4">
+                    <h3 class="text-xl font-bold">Максим Арутюнов</h3>
+                    <p>Іспанська, німецька мови. 4 роки досвіду.</p>
+                </div>
+            </div>
+            <button id="prev-translator" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#8592;</button>
+            <button id="next-translator" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#8594;</button>
+        </div>
+    </section>
+
+    <!-- Форма замовлення -->
+    <section id="order-form" class="py-10 px-5">
+        <h2 class="text-3xl font-semibold text-center mb-4">Форма для замовлення послуг</h2>
+        <form id="order" class="max-w-lg mx-auto bg-white p-6 rounded-2xl shadow-md">
+            <input type="text" placeholder="П.І.Б." required class="w-full mb-4 p-2 border rounded">
+            <input type="email" placeholder="Електронна адреса" required class="w-full mb-4 p-2 border rounded">
+            <input type="text" placeholder="Тип послуги" required class="w-full mb-4 p-2 border rounded">
+            <input type="text" placeholder="Номер телефону" required class="w-full mb-4 p-2 border rounded">
+            <textarea placeholder="Деталі замовлення" required class="w-full mb-4 p-2 border rounded"></textarea>
+            <button type="button" id="submit-order" class="w-full bg-orange-500 text-white py-2 rounded-xl">Сформувати замовлення</button>
+        </form>
+    </section>
+
+    <!-- Відгуки -->
+    <section id="reviews" class="py-10 px-5 bg-gray-200">
+        <h2 class="text-3xl font-semibold text-center mb-4">Відгуки про нас</h2>
+        <div class="relative max-w-3xl mx-auto">
+            <div id="review-slider" class="flex overflow-hidden">
+                <div class="min-w-full p-5 bg-white rounded-2xl shadow-md">Відгук 1: Чудова робота!</div>
+                <div class="min-w-full p-5 bg-white rounded-2xl shadow-md">Відгук 2: Дуже якісний переклад!</div>
+                <div class="min-w-full p-5 bg-white rounded-2xl shadow-md">Відгук 3: Рекомендую всім!</div>
+            </div>
+            <button id="prev-review" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#8592;</button>
+            <button id="next-review" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#8594;</button>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contacts" class="py-10 px-5 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Контакти</h2>
+        <div class="flex justify-center space-x-4">
+            <a href="https://t.me/denisipdd" class="text-blue-500" target="_blank">Telegram</a>
+            <a href="https://instagram.com/Translators_UA" class="text-pink-500" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <script>
+        // Переключення слайдів для перекладачів
+        let translatorIndex = 0;
+        const translators = document.querySelectorAll('#translator-slider > div');
+
+        document.getElementById('next-translator').addEventListener('click', () => {
+            translatorIndex = (translatorIndex + 1) % translators.length;
+            document.getElementById('translator-slider').style.transform = `translateX(-${translatorIndex * 100}%)`;
+        });
+
+        document.getElementById('prev-translator').addEventListener('click', () => {
+            translatorIndex = (translatorIndex - 1 + translators.length) % translators.length;
+            document.getElementById('translator-slider').style.transform = `translateX(-${translatorIndex * 100}%)`;
+        });
+
+        // Переключення слайдів для відгуків
+        let reviewIndex = 0;
+        const reviews = document.querySelectorAll('#review-slider > div');
+
+        document.getElementById('next-review').addEventListener('click', () => {
+            reviewIndex = (reviewIndex + 1) % reviews.length;
+            document.getElementById('review-slider').style.transform = `translateX(-${reviewIndex * 100}%)`;
+        });
+
+        document.getElementById('prev-review').addEventListener('click', () => {
+            reviewIndex = (reviewIndex - 1 + reviews.length) % reviews.length;
+            document.getElementById('review-slider').style.transform = `translateX(-${reviewIndex * 100}%)`;
+        });
+
+        // Перенаправлення на Google Форму
+        document.getElementById('submit-order').addEventListener('click', () => {
+            window.location.href = 'https://forms.gle/your-google-form-link'; // Додайте своє посилання на форму
+        });
+    </script>
+</body>
+
+</html>
