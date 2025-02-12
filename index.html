@@ -8,16 +8,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body style="background: linear-gradient(90deg, #B8A9A9 2%, #938B8B 26%, #7D7979 40%, #080808 100%);">
     <!-- Головна секція -->
-    <section class="bg-white py-10 text-center">
+    <section class="py-1 text-lg flex items-center">
+    <img src="C:\Users\n3199\Downloads\image-removebg-preview.png" alt="Логотип" class="w-32 h-32 ml-1">
+    <h1 class="text-6xl font-bold ml-[0px]">Echo Verse</h1>
+</section>
+    <section class="py-0 text-center">
+        <div class="p-5 bg-white rounded-2xl shadow-md">
         <h1 class="text-4xl font-bold mb-4">Переклади</h1>
+    </div>
+        <div class="p-5 bg-orange-300 rounded-2xl shadow-md">
         <h1 class="text-4xl font-bold mb-4">ШВИДКО, ЯКІСНО, ЕФЕКТИВНО</h1>
+    </div>
         <p class="text-lg">Переклад – це не просто заміна слів, а передача змісту, стилю та емоцій.</p>
     </section>
-
     <!-- Про нас -->
-    <section id="about" class="py-10 px-5 bg-gray-200">
+    <section id="about" class="py-10 px-5">
         <h2 class="text-3xl font-semibold text-center mb-4">Про нас</h2>
         <p class="text-center max-w-2xl mx-auto">Бюро перекладів "Echo Verse" – це команда професіоналів, які пропонують послуги з письмового, усного перекладу та локалізації сайтів.</p>
     </section>
@@ -46,7 +53,7 @@
     </section>
 
      <!-- Наші перекладачі (слайдер) -->
-    <section id="translators" class="py-10 px-5 bg-gray-200">
+    <section id="translators" class="py-10 px-5">
         <h2 class="text-3xl font-semibold text-center mb-4">Наші перекладачі</h2>
         <div class="relative max-w-3xl mx-auto overflow-hidden">
             <div id="translator-slider" class="flex transition-transform duration-500">
@@ -80,19 +87,32 @@
         </form>
     </section>
 
-    <!-- Відгуки -->
-    <section id="reviews" class="py-10 px-5 bg-gray-200">
+   <!-- Відгуки -->
+<section id="reviews" class="py-10 px-5">
     <h2 class="text-3xl font-semibold text-center mb-4">Відгуки про нас</h2>
     <div class="relative max-w-3xl mx-auto overflow-hidden">
         <div id="review-slider" class="flex transition-transform duration-500">
-            <div class="min-w-full p-5 bg-white rounded-2xl shadow-md">Відгук 1: Чудова робота!</div>
-            <div class="min-w-full p-5 bg-white rounded-2xl shadow-md">Відгук 2: Дуже якісний переклад!</div>
-            <div class="min-w-full p-5 bg-white rounded-2xl shadow-md">Відгук 3: Рекомендую всім!</div>
+            <div class="min-w-full p-5 text-center">
+                <img src="user1.jpg" class="mx-auto rounded-full w-24 h-24 mb-4" alt="Користувач 1">
+                <h3 class="text-xl font-bold">Іван Петрович</h3>
+                <p class="italic text-gray-600">"Чудова робота! Дуже задоволений якістю послуг."</p>
+            </div>
+            <div class="min-w-full p-5 text-center">
+                <img src="user2.jpg" class="mx-auto rounded-full w-24 h-24 mb-4" alt="Користувач 2">
+                <h3 class="text-xl font-bold">Анна Коваленко</h3>
+                <p class="italic text-gray-600">"Дуже якісний переклад! Обов'язково звернусь ще."</p>
+            </div>
+            <div class="min-w-full p-5 text-center">
+                <img src="user3.jpg" class="mx-auto rounded-full w-24 h-24 mb-4" alt="Користувач 3">
+                <h3 class="text-xl font-bold">Олег Мельник</h3>
+                <p class="italic text-gray-600">"Рекомендую всім! Швидко та професійно."</p>
+            </div>
         </div>
-        <button id="prev-review" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#8592;</button>
-        <button id="next-review" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow">&#8594;</button>
+        <button id="prev-review" class="absolute -left-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg">&#8592;</button>
+        <button id="next-review" class="absolute -right-0 top-1/2 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg">&#8594;</button>
     </div>
 </section>
+
 
     <!-- Додавання нового відгуку -->
         <div class="max-w-lg mx-auto bg-white p-6 rounded-2xl shadow-md mt-6">
